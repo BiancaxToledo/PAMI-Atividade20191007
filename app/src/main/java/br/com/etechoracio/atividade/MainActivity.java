@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements CustomDialog.Item
         setContentView(R.layout.activity_main);
 
         adapter = new ItemAdapter(this);
-
+        listView.setOnItemLongClickListener(this);
         listView = findViewById(R.id.listView);
         listView.setAdapter(adapter);
 
