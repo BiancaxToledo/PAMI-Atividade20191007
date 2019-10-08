@@ -7,4 +7,10 @@
         android:icon="@android:drawable/ic_menu_add"
         android:title="@string/mais"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/btnEditar"
+        android:title="@string/editar" />
+    <item
+        android:id="@+id/btnExcluir"
+        android:title="@string/excluir" />
 </menu>
