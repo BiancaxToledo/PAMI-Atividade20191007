@@ -47,4 +47,15 @@ public class MainActivity extends AppCompatActivity implements CustomDialog.Item
 
         return super.onCreateOptionsMenu(menu);
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId()== R.id.btnMais)
+        {
+            CustomDialog dialog = new CustomDialog(this);
+            dialog.show(getFragmentManager(), "CustomDialog");
+            insertMode = true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
