@@ -62,6 +62,13 @@ public class MainActivity extends AppCompatActivity implements CustomDialog.Item
     }
 
     @Override
+    public boolean onMenuItemClick(MenuItem menuItem)
+    {
+        adapter.removeItem(selectedItem);
+        return false;
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId()== R.id.btnMais)
         {
@@ -70,6 +77,8 @@ public class MainActivity extends AppCompatActivity implements CustomDialog.Item
             insertMode = true;
         }
         return super.onOptionsItemSelected(item);
+
+
 
     }
 }
